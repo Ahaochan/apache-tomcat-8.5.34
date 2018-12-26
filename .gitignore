@@ -2,4 +2,3 @@
 .logs
 **/*.tmp
 logs/
-webapps/
