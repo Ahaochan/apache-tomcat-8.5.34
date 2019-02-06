@@ -13,5 +13,10 @@ EXPOSE 8080
 ENTRYPOINT startup.sh && tail -fn 300 /usr/local/tomcat/logs/catalina.out
 CMD []
 # docker build -t tomcat-my .
-# docker run -d -p 80:8080 tomcat-my
+# docker run -d \
+#    -p 8005:8005 \ # Server 端口
+#    -p 80:8080 \   # Http 端口
+#    -p 8443:8443 \ # Http 重定向 端口
+#    -p 8009:8009 \ # AJP 端口
+#    tomcat-my
 
