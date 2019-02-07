@@ -1,0 +1,15 @@
+version: '3'
+services:
+  web:
+    build:
+      context: .
+      args:
+        war: "./ROOT.war"
+    ports:
+#     - "宿主机端口:容器内端口"
+     - "8005:8005"  # Server 端口
+     - "80:8080"    # Http 端口
+     - "8443:8443"  # Http 重定向 端口
+     - "8009:8009"  # AJP 端口
+#  mysql:
+#    image: "mysql"
