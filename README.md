@@ -11,6 +11,7 @@
 # 加固
 1. 删除 `webapps` 自带的控制台程序
 1. 添加环境变量配置文件 `bin/setenv.sh`
+1. 外部项目部署`conf/context.xml`
 
 # 参考资料
 - [Tomcat服务安全加固](https://help.aliyun.com/knowledge_detail/37421.html)
