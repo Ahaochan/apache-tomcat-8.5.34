@@ -16,11 +16,12 @@
   limitations under the License.
 -->
 <!-- The contents of this file will be loaded for each web application -->
-<Context path="/ahao" docBase="/opt/ahao" reloadable="true" privileged="true">
-    <!-- path       表示项目的路径, 如 http://localhost:8080/ahao -->
-    <!-- docBase    war包解压后的路径                             -->
-    <!-- reloadable 允许Web应用程序进行热部署                      -->
-    <!-- privileged 允许Web应用程序使用容器的Servlet               -->
+<Context path="/ahao" docBase="/opt/ahao" reloadable="true" privileged="true" useHttpOnly="true">
+    <!-- path        表示项目的路径, 如 http://localhost:8080/ahao -->
+    <!-- docBase     war包解压后的路径 -->
+    <!-- reloadable  允许Web应用程序进行热部署 -->
+    <!-- privileged  允许Web应用程序使用容器的Servlet -->
+    <!-- useHttpOnly 禁止 js 获取 Cookie -->
 
     <!-- Default set of monitored resources. If one of these changes, the    -->
     <!-- web application will be reloaded.                                   -->
